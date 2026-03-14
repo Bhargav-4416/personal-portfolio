@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Projects</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI", sans-serif;
+}
+
+/* Background */
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#000;
+}
+
+/* Main container */
+
+.wrapper{
+width:620px;
+padding:40px;
+}
+
+/* Title */
+
+h1{
+text-align:center;
+margin-bottom:35px;
+font-size:28px;
+color:white;
+letter-spacing:1px;
+}
+
+/* Grid layout */
+
+.container{
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:20px;
+}
+
+/* Links */
+
+a{
+text-decoration:none;
+}
+
+/* Cards */
+
+.card{
+height:95px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:17px;
+font-weight:600;
+background:white;
+color:black;
+transition:all 0.25s ease;
+padding:10px;
+text-align:center;
+}
+
+/* Hover effect */
+
+.card:hover{
+transform:translateY(-6px);
+background:#e5e5e5;
+box-shadow:0 10px 25px rgba(255,255,255,0.15);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<h1 style="color: brown;">JavaScript Projects</h1>
+
+<div class="container">
+
+<a href="mediaqurie/index.html">
+<div class="card">Media Query</div>
+</a>
+
+<a href="Firstpage/javascript/index.html">
+<div class="card">Index </div>
+</a>
+
+<a href="Firstpage/javascript/DOMmanipulations.html">
+<div class="card">DOM</div>
+</a>
+
+<a href="Firstpage/javascript/js1.html">
+<div class="card">JavaScript example</div>
+</a>
+
+<a href="Firstpage/javascript/Object.html">
+<div class="card">Object</div>
+</a>
+
+<a href="Firstpage/applicationform/index.html">
+<div class="card">Student Task Board</div>
+</a>
+
+<a href="Firstpage/javascript/AgePredictor.html">
+<div class="card">Age Predictor</div>
+</a>
+
+<a href="Firstpage/javascript/calculator.html">
+<div class="card">Calculator</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

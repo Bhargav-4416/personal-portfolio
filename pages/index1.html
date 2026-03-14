@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Projects</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#000000;
+}
+
+/* Main container */
+
+.wrapper{
+width:620px;
+padding:40px;
+}
+
+/* Title */
+
+h1{
+text-align:center;
+margin-bottom:35px;
+font-size:28px;
+color:white;
+letter-spacing:1px;
+}
+
+/* Grid layout */
+
+.container{
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:20px;
+}
+
+/* Remove link styling */
+
+a{
+text-decoration:none;
+}
+
+/* Cards */
+
+.card{
+height:95px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:17px;
+font-weight:600;
+background:white;
+color:black;
+transition:all 0.25s ease;
+}
+
+/* Hover effect */
+
+.card:hover{
+transform:translateY(-6px);
+background:#e5e5e5;
+box-shadow:0 10px 25px rgba(255,255,255,0.15);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<h1 style="color: green;">HTML Projects</h1>
+
+<div class="container">
+
+<a href="Firstpage/div.html"><div class="card">DIV</div></a>
+
+<a href="Firstpage/heading.html"><div class="card">Heading</div></a>
+
+<a href="Firstpage/list.html"><div class="card">Lists</div></a>
+
+<a href="Firstpage/listslinkimage.html"><div class="card">Lists Link Image</div></a>
+
+<a href="Firstpage/Mypersonalprofile.html"><div class="card">My Personal Profile</div></a>
+
+<a href="Firstpage/schedule.html"><div class="card">Schedule</div></a>
+
+<a href="Firstpage/table.html"><div class="card">Table</div></a>
+
+<a href="Firstpage/Temperatureandweightconvesrsion.html"><div class="card">Temperature & Weight</div></a>
+
+</div>
+
+</div>
+
+</body>
+</html>

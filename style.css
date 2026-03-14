@@ -1,0 +1,182 @@
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #b5b5b5;
+  --border: #2a2a2a;
+  --card: #ffffff;
+  --card-text: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+
+
+/* Header */
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.profile-pic {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid var(--border);
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.title {
+  color: var(--muted);
+  margin-top: .5rem;
+}
+
+
+
+/* Sections */
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+
+
+/* Projects Grid */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 1.2rem;
+}
+
+/* Project Cards */
+
+.project {
+  background: var(--card);
+  color: var(--card-text);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+/* Hover effect */
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+}
+
+
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  margin-top: 4rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: .9rem;
+  transition: .2s;
+}
+
+.socials a:hover {
+  color: #d1d1d1;
+}
+
+
+
+/* Mobile */
+
+@media (max-width:500px){
+  body{ padding:1.5rem 1rem; }
+  .name{ font-size:2rem; }
+}
+
+
+
+/* Floating Social Button */
+
+.social-box{
+position:fixed;
+bottom:25px;
+right:25px;
+width:60px;
+height:60px;
+background:black;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+font-weight:bold;
+cursor:pointer;
+transition:all 0.3s ease;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(255,255,255,0.15);
+}
+
+.social-box:hover{
+width:220px;
+border-radius:30px;
+background:#e5e5e5;
+}
+
+/* Hidden links */
+
+.social-links{
+position:absolute;
+display:flex;
+gap:20px;
+opacity:0;
+transition:0.3s;
+}
+
+.social-box:hover .social-links{
+opacity:1;
+}
+
+.social-links a{
+text-decoration:none;
+color:white;
+font-weight:600;
+font-size:15px;
+}

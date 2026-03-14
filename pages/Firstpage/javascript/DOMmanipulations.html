@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const h1Element = document.createElement("h1");
+        h1Element.textContent = "DOM Manipulations";
+        document.body.appendChild(h1Element);
+        h1Element.id = "heading";
+        h1Element.classList.add("main-heading");
+
+        const pElement = document.createElement("p");
+        pElement.textContent = "Paragraph tag";
+        document.body.appendChild(pElement);
+
+
+        const buttonElement = document.createElement("button");
+        buttonElement.textContent = "Button";
+        document.body.appendChild(buttonElement);
+
+        buttonElement.addEventListener("click", function(){
+        document.body.style.backgroundColor = "green";
+        h1Element.style.color = "red";
+        pElement.style.color = "blue";
+
+});
+
+    </script>
+</body>
+</html>

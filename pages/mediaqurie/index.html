@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Query Width Example</title>
+
+<style>
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+@media all {
+    h2{
+        color: red ;
+    }
+}
+@media print{
+    h2{
+        color: green;
+    }
+}
+@media screen{
+    h2{
+    background-color: green;
+    color: black;
+    }
+} */
+
+
+.box {
+  background-color: gray;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+/* @media(min-width:350px)and (max-width:900px){
+    .box{
+        background-color: green;
+        color: yellow;
+        border-radius: 50%;
+    }
+}
+@media (orientation: portrait), (max-width:600px) {
+    
+} */
+@media(min-width:350){
+    .box{
+        background-color: red;
+        border-radius: 50%;
+    }
+}
+@media(min-width:351) and (max-width:850){
+    .box{
+        background-color: blue;
+    }
+}
+@media(max-width:851){
+    .box{
+        background-color: green                                             ;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Media Query Width Features</h2>
+<p>Resize the browser window to see the background color change.</p>
+
+<div class="box">
+  Resize the screen<br>
+  Color changes using media queries
+</div>
+
+</body>
+</html>

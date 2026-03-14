@@ -1,0 +1,42 @@
+.body-background{
+    background-color:rgb(110, 68, 207);
+    background-image: url("image-bg.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+.main-container
+{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(189, 229, 216);
+    border-radius: 25px;
+    margin: 20px;
+    max-width: 90%;
+    border: 5px;
+    transition: all 2 ease;
+}
+.main-container:hover{
+    transform: translate(-50px, -50px);
+    box-shadow: orange;
+}
+.image-box
+{
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    border-radius: 30px;
+}
+h1{
+    font-family: Roboto;
+    color: dark rgb(152, 185, 61);
+    text-align: center;
+}
+.root-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+   
+}
+.xyz{
+    color: yellow;
+}
